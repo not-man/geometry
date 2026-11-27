@@ -76,7 +76,7 @@ int readPoint(const char *prompt, point *currentPoint) {
 
 int OpenPgm(){
     if(system("xdg-open grid.pgm")!=0){
-        printf("PGM file not found\n");
+        printf("Error opening PGM file\n");
         return 1;
     }
     return 0;
